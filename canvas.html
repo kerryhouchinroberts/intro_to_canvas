@@ -9,16 +9,19 @@
 
 <body >
   <div id="canvas-container">
-  <canvas id="canvas" width="1000" height="500" onclick="quarterRectangle()" ondblclick="redRectangle()"></canvas>
+  <canvas id="canvas" width="1400" height="500" onclick="quarterRectangle()" ondblclick="redRectangle()"></canvas>
     <p>
-      <button id="red">Red</button>
-      <button id="green">Green</button>
-      <button id="blue">Blue</button>
-      <button id="orange">Orange</button>
+      <button id="red" onclick="randomRectangle('Red')">Red</button>
+      <button id="green" onclick="randomRectangle('Green')">Green</button>
+      <button id="blue" onclick="randomRectangle('Blue')">Blue</button>
+      <button id="orange" onclick="randomRectangle('Orange')">Orange</button>
     </p>
     <p>
-      <button id="clear">Clear Canvas</button>
-      <button id="fib">Fibonacci</button>
+      <button id="clear" onclick="drawRectangle()">Fade Canvas</button>
+      <button id="fib" onclick="drawFibonacci()">Fibonacci</button>
+      <button id="circle" onclick="colorCircle()">Color Circle</button>
+      <button id="circle" onclick="whiteCircle()">White Circle</button>
+      <button id="circle" onclick="automate()">Automate</button>
     </p>
   </div>
 </body>
